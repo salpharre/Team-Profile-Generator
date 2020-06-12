@@ -5,10 +5,16 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const OUTPUT_DIR = path.resolve(__dirname, "output");//what is this? path to folder where team.html is
+const outputPath = path.join(OUTPUT_DIR, "team.html");//creating team.html between ``? no, i'll be writing to it
 
 const render = require("./lib/htmlRenderer");
+
+
+
+
+
+
 
 
 // Write code to use inquirer to gather information about the development team members,
