@@ -8,6 +8,7 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");//what is this? path to folder where team.html is
 const outputPath = path.join(OUTPUT_DIR, "team.html");//creating team.html between ``? no, i'll be writing to it
 
+/*imports file that renders the completed template (that includes engineer, intern, manager html into main.html)*/
 const render = require("./lib/htmlRenderer");
 
 
