@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Team</title>
+    <!--Links for bootstrap and awsome fonts that give little icons to each employee type-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+    <!--Top part of bootstrap containers where the other html files are added to-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 jumbotron mb-3 team-heading">
@@ -23,7 +25,79 @@
     <div class="container">
         <div class="row">
             <div class="team-area col-12 d-flex justify-content-center">
-                {{ team }}
+                <!--Bootstrap card that holds info for Manager employees-->
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">sandra</h2>
+        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: 453</li>
+            <li class="list-group-item">Email: <a href="mailto:sandra@gmail.com">sandra@gmail.com</a></li>
+            <li class="list-group-item">Office number: 345</li>
+        </ul>
+    </div>
+</div>
+<!--Bootstrap card that holds info for Engineer employees-->
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">tam</h2>
+        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: 4532</li>
+            <li class="list-group-item">Email: <a href="mailto:tam@gmail.com">tam@gmail.com</a></li>
+            <li class="list-group-item">GitHub: <a href="https://github.com/tam45ty" target="_blank" rel="noopener noreferrer">tam45ty</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!--Bootstrap card that holds info for Engineer employees-->
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">bob</h2>
+        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: 542</li>
+            <li class="list-group-item">Email: <a href="mailto:bob@gmail.com">bob@gmail.com</a></li>
+            <li class="list-group-item">GitHub: <a href="https://github.com/bob435" target="_blank" rel="noopener noreferrer">bob435</a></li>
+        </ul>
+    </div>
+</div>
+<!--Bootstrap card that holds info for Intern employees-->
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">sarah</h2>
+        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: 4321</li>
+            <li class="list-group-item">Email: <a href="mailto:sarah@gmail.com">sarah@gmail.com</a></li>
+            <li class="list-group-item">School: sac state</li>
+        </ul>
+    </div>
+</div>
+
+    <!--Bootstrap card that holds info for Intern employees-->
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">james</h2>
+        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: 5432</li>
+            <li class="list-group-item">Email: <a href="mailto:james@gmail.com">james@gmail.com</a></li>
+            <li class="list-group-item">School: ucd</li>
+        </ul>
+    </div>
+</div>
+
             </div>
         </div>
     </div>
