@@ -12,6 +12,138 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");//creating team.html betwe
 const render = require("./lib/htmlRenderer");
 
 
+let teamList = [];
+
+/*
+function renderHTML() {
+    let html = render(teamList);
+            fs.writeFile(outputPath, html, function(err) {
+                if (err) {
+                    throw err;
+                }
+                console.log("Team Profile page successfully made!!")
+            }) 
+}
+*/
+
+function choices() {
+    inquirer.prompt([
+        {
+            type: "list",
+            name: "employee",
+            message: "Use arrow keys to select type of employee",
+            choices: ["Manager", "Engineer", "Intern"]
+        }
+    ]).then(answer => {
+        console.log(answer);
+    /*
+        let employeeType = answer.choices;
+        if (employeeType === "Manager") {
+            manager();
+        }
+        else if (employeeType === "Engineer") {
+            engineer();
+        }
+        else if (employeeType === "Intern") {
+            intern();
+        }
+        else {
+            renderHTML();
+        }
+    */
+    }
+
+/*
+function manager () {
+    inquirer.prompt([
+            {
+                type:"input",
+                name: "name",
+                message: "Type name of employee"
+            },
+            {
+                type:"input",
+                name: "id",
+                message: "Type employee id"
+            },
+            {
+                type:"input",
+                name: "email",
+                message: "Type employee email"
+            },
+            {
+                type:"input",
+                name: "officeNumber",
+                message: "Type employee office number"
+            },
+            {
+                type:"confirm",
+                name: "anotherEmployee",
+                message: "Add another employee?"
+            }
+        ]).then(answer => {
+            teamList.push(new Manager(answer.name, answer.id, answer.email, answer.officeNumber));
+            if (answer.anotherEmployee === true) {
+                choices();
+            }
+            else {
+                renderHTML();
+            }
+        }
+}
+
+function engineer () {
+    inquirer.prompt([
+             {
+                type:"input",
+                name: "name",
+                message: "Type name of employee"
+            },
+            {
+                type:"input",
+                name: "id",
+                message: "Type employee id"
+            },
+            {
+                type:"input",
+                name: "email",
+                message: "Type employee email"
+            },
+            {
+                type:"input",
+                name: "github",
+                message: "Type employee's github username"
+            }
+        ]);
+}
+
+function intern () {
+    inquirer.prompt([
+             {
+                type:"input",
+                name: "name",
+                message: "Type name of employee"
+            },
+            {
+                type:"input",
+                name: "id",
+                message: "Type employee id"
+            },
+            {
+                type:"input",
+                name: "email",
+                message: "Type employee email"
+            },
+            {
+                type:"input",
+                name: "school",
+                message: "Type name of school employee attends"
+            }
+        ]);
+}
+
+
+*/
 
 
 
