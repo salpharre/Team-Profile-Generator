@@ -33,7 +33,7 @@ For demo:
 
 Generated finished product, web page file (team.html) will look like below:
 
-![example](https://github.com/salpharre/Team-Profile-Generator/blob/master/img/finishedproduct.jpg)
+![example](https://github.com/salpharre/Team-Profile-Generator/blob/master/img/demopage.jpg)
 
 
 ### Technology
