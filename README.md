@@ -1,6 +1,6 @@
 # Team-Profile-Generator
 
-![AppVeyor](https://img.shields.io/appveyor/build/salpharre/Team-Profile-Generator?style=plastic) ![GitHub last commit](https://img.shields.io/github/last-commit/salpharre/Team-Profile-Generator)
+![GitHub last commit](https://img.shields.io/github/last-commit/salpharre/Team-Profile-Generator?style=plastic) ![npm version](https://badge.fury.io/js/inquirer.svg)(https://badge.fury.io/js/inquirer)
 
 CLI application that generates a html page displaying team member's information
 
