@@ -1,5 +1,7 @@
+//path to module to test
 const Engineer = require("../lib/Engineer");
 
+//tests each property and method in engineer module
 test("Can set GitHUb account via constructor", () => {
   const testValue = "GitHubUser";
   const e = new Engineer("Foo", 1, "test@test.com", testValue);

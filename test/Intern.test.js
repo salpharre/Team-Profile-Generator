@@ -1,5 +1,7 @@
+//path to module to test
 const Intern = require("../lib/Intern");
 
+//tests each property and method in intern module
 test("Can set school via constructor", () => {
   const testValue = "UCLA";
   const e = new Intern("Foo", 1, "test@test.com", testValue);

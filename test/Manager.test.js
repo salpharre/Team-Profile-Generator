@@ -1,6 +1,8 @@
+//path to modules to test
 const Manager = require("../lib/Manager");
 const Employee = require("../lib/Employee");
 
+//tests each property and method in manager module
 test("Can set office number via constructor argument", () => {
   const testValue = 100;
   const e = new Manager("Foo", 1, "test@test.com", testValue);

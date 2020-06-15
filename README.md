@@ -1,5 +1,7 @@
 # Team-Profile-Generator
 
+
+
 CLI application that generates a html page displaying team member's information
 
 ## Table of Contents
@@ -23,21 +25,20 @@ To run the application:
 1. Fork it
 2. `git clone`
 3. In directory, follow installation instructions
-4. In directory, run `node index` and follow prompts
+4. In directory, run `node app` and follow prompts
 
 For demo:
 
-To youtube! - link coming soon!
+[To youtube!](https://youtu.be/2Kp1rXdKbsU)
 
 Generated finished product, web page file (team.html) will look like below:
 
-![first half] - img coming soon!
+![example]()
 
-![second half] - img comming soon!
 
 ### Technology
 
-* VS Code v
+* VS Code v1.46.0
 * shields.io
 * Node v12.16.1
 
@@ -57,4 +58,4 @@ None
 
 ### Launch
 
-Date application releases: `June 13th, 2020`
+Date application releases: `June 14th, 2020`

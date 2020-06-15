@@ -1,5 +1,7 @@
+//path to module to test
 const Employee = require("../lib/Employee");
 
+//tests each property and method in employee module
 test("Can instantiate Employee instance", () => {
   const e = new Employee();
   expect(typeof(e)).toBe("object");

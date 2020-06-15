@@ -17,7 +17,9 @@ choices();
 /*array that manager, inter, and engineer objects will be added to and then passed through the render function from htmlRenderer.js*/
 let teamList = [];
 
-/**/
+/*function that asks the user what type of employee they are entering information about, using the choices question in the object, the user
+is offered to choose from three employees. The promise's response is then ran through an if statement, depending on the choice made by
+the user, another function will run where the user is asked employee specific questions*/
 function choices() {
     inquirer.prompt([
         {
@@ -39,13 +41,12 @@ function choices() {
         else if (employeeType === "Intern") {
             intern();
         }
-        else {
-            renderHTML();
-        }
     });
 };
 
-/**/
+/*function that is called when user chooses to add a manager to their team page. The last question object asks the user if they
+wish to add another employee, if yes then choices function is called, if the user says no then renderHTML function is called to write
+into team.html*/
 function manager() {
     inquirer.prompt([
         {
@@ -85,7 +86,9 @@ function manager() {
     });
 };
 
-/**/
+/*function that is called when user chooses to add a engineer to their team page. The last question object asks the user if they
+wish to add another employee, if yes then choices function is called, if the user says no then renderHTML function is called to write
+into team.html*/
 function engineer() {
     inquirer.prompt([
         {
@@ -125,7 +128,9 @@ function engineer() {
     });
 };
 
-/**/
+/*function that is called when user chooses to add an intern to their team page. The last question object asks the user if they
+wish to add another employee, if yes then choices function is called, if the user says no then renderHTML function is called to write
+into team.html*/
 function intern() {
     inquirer.prompt([
         {
@@ -165,7 +170,7 @@ function intern() {
     });
 };
 
-/**/
+/*function to call the render function from htmlRenderer.js into a variable and writes the variable into team.html in output folder*/
 function renderHTML() {
     let html = render(teamList);
     fs.writeFile(outputPath, html, function (err) {
