@@ -1,6 +1,6 @@
 # Team-Profile-Generator
 
-
+![AppVeyor](https://img.shields.io/appveyor/build/salpharre/Team-Profile-Generator?style=plastic) ![GitHub last commit](https://img.shields.io/github/last-commit/salpharre/Team-Profile-Generator)
 
 CLI application that generates a html page displaying team member's information
 
@@ -33,7 +33,7 @@ For demo:
 
 Generated finished product, web page file (team.html) will look like below:
 
-![example]()
+![example](https://github.com/salpharre/Team-Profile-Generator/blob/master/img/finishedproduct.jpg)
 
 
 ### Technology
@@ -58,4 +58,4 @@ None
 
 ### Launch
 
-Date application releases: `June 14th, 2020`
+Date application releases: `June 15th, 2020`
